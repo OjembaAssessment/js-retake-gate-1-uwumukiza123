@@ -25,15 +25,15 @@ function newParagraph() {
     let fontSize = 64;
   
     for(let i =0; i<newResult.length; i++){
-    //   newResult[i] = `<span style="font-size:${fontSize}px">${newResult[i]}</span>`
+      newResult[i] = `<span style="font-size:${fontSize}px">${newResult[i]}</span>`
       fontSize -= 4
     }
     
     myCloud.innerHTML = newResult.join(" ");
     
     
-  }
-  newParagraph();
+}
+newParagraph();
 
 
 
